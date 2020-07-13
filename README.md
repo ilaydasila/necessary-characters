@@ -1,1 +1,1 @@
-"# Necessary Characters" 
+# Necessary Characters
