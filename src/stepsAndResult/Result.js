@@ -4,12 +4,14 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Result = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.name);
 
   return (
     <>
-      <p>{JSON.stringify(state, null, 2)}</p>
-      <Link to='/'>Start Again</Link>
+      <p className='name'>{state}</p>
+      <Link to='/'>
+        <button>Start Again</button>
+      </Link>
     </>
   );
 };

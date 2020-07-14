@@ -25,55 +25,58 @@ export const Step1 = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
-        <label htmlFor='hair'>Hair:</label>
+      <div className='input-container'>
+        <label htmlFor='hair'>Hair</label>
+        <br />
         <select
           id='hair'
           name='hair'
           ref={register}
           onChange={(e) => dispatch(chooseHair(e.target.value))}
         >
-          <option value='hair1'>Hair 1</option>
-          <option value='hair2'>Hair 2</option>
-          <option value='hair3'>Hair 3</option>
-          <option value='hair4'>Hair 4</option>
-          <option value='hair5'>Hair 5</option>
-          <option value='hair6'>Hair 6</option>
+          <option value='hair1'>1</option>
+          <option value='hair2'>2</option>
+          <option value='hair3'>3</option>
+          <option value='hair4'>4</option>
+          <option value='hair5'>5</option>
+          <option value='hair6'>6</option>
         </select>
-        <div>
-          <label htmlFor='cloth'>Cloth:</label>
-          <select
-            id='cloth'
-            name='cloth'
-            ref={register}
-            onChange={(e) => dispatch(chooseCloth(e.target.value))}
-          >
-            <option value='cloth1'>Cloth 1</option>
-            <option value='cloth2'>Cloth 2</option>
-            <option value='cloth3'>Cloth 3</option>
-            <option value='cloth4'>Cloth 4</option>
-            <option value='cloth5'>Cloth 5</option>
-            <option value='cloth6'>Cloth 6</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor='weapon'>Weapon:</label>
-          <select
-            id='weapon'
-            name='weapon'
-            ref={register}
-            onChange={(e) => dispatch(chooseWeapon(e.target.value))}
-          >
-            <option value='weapon1'>Weapon 1</option>
-            <option value='weapon2'>Weapon 2</option>
-            <option value='weapon3'>Weapon 3</option>
-            <option value='weapon4'>Weapon 4</option>
-            <option value='weapon5'>Weapon 5</option>
-            <option value='weapon6'>Weapon 6</option>
-          </select>
-        </div>
-        <button>Next</button>
       </div>
+      <div className='input-container'>
+        <label htmlFor='cloth'>Cloth</label>
+        <br />
+        <select
+          id='cloth'
+          name='cloth'
+          ref={register}
+          onChange={(e) => dispatch(chooseCloth(e.target.value))}
+        >
+          <option value='cloth1'>1</option>
+          <option value='cloth2'>2</option>
+          <option value='cloth3'>3</option>
+          <option value='cloth4'>4</option>
+          <option value='cloth5'>5</option>
+          <option value='cloth6'>6</option>
+          <option value='cloth7'>7</option>
+        </select>
+      </div>
+      <div className='input-container'>
+        <label htmlFor='weapon'>Weapon</label>
+        <br />
+        <select
+          id='weapon'
+          name='weapon'
+          ref={register}
+          onChange={(e) => dispatch(chooseWeapon(e.target.value))}
+        >
+          <option value='weapon1'>1</option>
+          <option value='weapon2'>2</option>
+          <option value='weapon3'>3</option>
+          <option value='weapon4'>4</option>
+          <option value='weapon5'>5</option>
+        </select>
+      </div>
+      <button>Next</button>
     </form>
   );
 };

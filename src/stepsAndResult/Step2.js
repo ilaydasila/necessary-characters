@@ -19,7 +19,9 @@ export const Step2 = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label htmlFor='name'>Name:</label>
+        <label htmlFor='name'>
+          Name<br></br>
+        </label>
         <input id='name' name='name' ref={register} type='text'></input>
         <button>Finish</button>
       </div>

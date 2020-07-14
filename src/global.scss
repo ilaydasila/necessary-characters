@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Roboto:wght@300&display=swap");
+
+//colors
+$white: #fff;
+$black: #000;
+$transparentWhite: rgba(255, 255, 255, 0.7);
+
+//vars
+$page-font: "Roboto", sans-serif;
+$underlined: "Montserrat Subrayada", sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $page-font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.black-p {
+  font-family: $underlined;
+  color: $black;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.white-p {
+  font-family: $underlined;
+  color: $white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #754fff;
+  color: white;
+  padding: 10px 35px;
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: 0.4s;
+
+  &:hover {
+    border: 2px solid #ff71e0;
+  }
+}
+
+form {
+  label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $white;
+  }
+
+  .input-container {
+    margin: 15px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    text-align-last: center;
+    color: #ec6f66;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 320px;
+    padding: 8px 0;
+    margin: 8px 0 52px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #efff91;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: #efff91;
+    }
+  }
+
+  select option {
+    background-color: $black;
+  }
+
+  input {
+    text-align: center;
+    text-align-last: center;
+    color: #ec6f66;
+    font-size: 1.2rem;
+    width: 320px;
+    padding: 8px 0;
+    margin: 8px 0 52px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #efff91;
+    cursor: pointer;
+  }
+}
+
+.name {
+  color: #ec6f66;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: default;
+  &:hover {
+    color: #efff91;
+  }
+}
