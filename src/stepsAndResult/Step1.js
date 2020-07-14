@@ -22,11 +22,17 @@ export const Step1 = () => {
     dispatch(chooseWeapon(data.weapon));
     history.push("/step2");
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor='hair'>Hair:</label>
-        <select id='hair' name='hair' ref={register}>
+        <select
+          id='hair'
+          name='hair'
+          ref={register}
+          onChange={(e) => dispatch(chooseHair(e.target.value))}
+        >
           <option value='hair1'>Hair 1</option>
           <option value='hair2'>Hair 2</option>
           <option value='hair3'>Hair 3</option>
@@ -36,7 +42,12 @@ export const Step1 = () => {
         </select>
         <div>
           <label htmlFor='cloth'>Cloth:</label>
-          <select id='cloth' name='cloth' ref={register}>
+          <select
+            id='cloth'
+            name='cloth'
+            ref={register}
+            onChange={(e) => dispatch(chooseCloth(e.target.value))}
+          >
             <option value='cloth1'>Cloth 1</option>
             <option value='cloth2'>Cloth 2</option>
             <option value='cloth3'>Cloth 3</option>
@@ -47,7 +58,12 @@ export const Step1 = () => {
         </div>
         <div>
           <label htmlFor='weapon'>Weapon:</label>
-          <select id='weapon' name='weapon' ref={register}>
+          <select
+            id='weapon'
+            name='weapon'
+            ref={register}
+            onChange={(e) => dispatch(chooseWeapon(e.target.value))}
+          >
             <option value='weapon1'>Weapon 1</option>
             <option value='weapon2'>Weapon 2</option>
             <option value='weapon3'>Weapon 3</option>

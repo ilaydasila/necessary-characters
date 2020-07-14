@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./App.scss";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -10,6 +11,9 @@ import { Step2 } from "./stepsAndResult/Step2";
 import { Result } from "./stepsAndResult/Result";
 
 function App() {
+  const characterState = `${useSelector((state) => state.hair)} ${useSelector(
+    (state) => state.cloth
+  )} ${useSelector((state) => state.weapon)}`;
   return (
     <div className='App'>
       <Router>
@@ -17,7 +21,7 @@ function App() {
         <Route exact path='/step2' component={Step2} />
         <Route exact path='/result' component={Result} />
       </Router>
-      <CharacterImage characterInfo={"hair4 cloth6 weapon5"} />
+      <CharacterImage characterInfo={characterState} />
     </div>
   );
 }
