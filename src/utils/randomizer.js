@@ -9,6 +9,7 @@ export function randomizerHair() {
     "hair7",
     "hair8",
     "hair9",
+    "hair10",
   ];
   const hair = hairs[Math.floor(Math.random() * hairs.length)];
   return hair;
@@ -25,6 +26,7 @@ export function randomizerCloth() {
     "cloth7",
     "cloth8",
     "cloth9",
+    "cloth10",
   ];
   const cloth = clothes[Math.floor(Math.random() * clothes.length)];
 

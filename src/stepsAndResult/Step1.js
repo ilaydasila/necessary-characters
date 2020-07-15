@@ -61,6 +61,7 @@ export const Step1 = () => {
             <option value='hair7'>7</option>
             <option value='hair8'>8</option>
             <option value='hair9'>9</option>
+            <option value='hair10'>10</option>
           </select>
         </div>
         <div className='input-container'>
@@ -81,6 +82,7 @@ export const Step1 = () => {
             <option value='cloth7'>7</option>
             <option value='cloth8'>8</option>
             <option value='cloth9'>9</option>
+            <option value='cloth10'>10</option>
           </select>
         </div>
         <div className='input-container'>
