@@ -5,15 +5,7 @@ export function randomizerHair() {
 }
 
 export function randomizerCloth() {
-  const clothes = [
-    "cloth1",
-    "cloth2",
-    "cloth3",
-    "cloth4",
-    "cloth5",
-    "cloth6",
-    "cloth7",
-  ];
+  const clothes = ["cloth1", "cloth2", "cloth3", "cloth4", "cloth5", "cloth6"];
   const cloth = clothes[Math.floor(Math.random() * clothes.length)];
 
   return cloth;
