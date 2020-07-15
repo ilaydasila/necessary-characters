@@ -23,49 +23,51 @@ function App() {
   )} ${useSelector((state) => state.weapon)}`;
   return (
     <>
-      <Header>
-        <div class='left-half'>
-          <p className='white-p'>MIX</p>
-          <p className='white-p'>CREATE</p>
-        </div>
-        <div class='right-half'>
-          <p className='black-p'>ENJOY</p>
-        </div>
-      </Header>
-      <Main>
-        <div id='wrapper'>
-          <div id='left'>
-            <Router>
-              <Route exact path='/' component={Step1} />
-              <Route exact path='/step2' component={Step2} />
-              <Route exact path='/result' component={Result} />
-            </Router>
+      <div className='content'>
+        <Header>
+          <div class='left-half'>
+            <p className='white-p'>MIX</p>
+            <p className='white-p'>CREATE</p>
           </div>
-          <CharacterImage characterInfo={characterState} />
-        </div>
-      </Main>
+          <div class='right-half'>
+            <p className='black-p'>ENJOY</p>
+          </div>
+        </Header>
+        <Main>
+          <div id='wrapper'>
+            <div id='left'>
+              <Router>
+                <Route exact path='/' component={Step1} />
+                <Route exact path='/step2' component={Step2} />
+                <Route exact path='/result' component={Result} />
+              </Router>
+            </div>
+            <CharacterImage characterInfo={characterState} />
+          </div>
+        </Main>
 
-      <Footer>
-        <p className='details'>
-          Code and Drawings by <span>IlaydaSila</span>
-        </p>
-        <p className='links'>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.com/ilaydasila'
-          >
-            <FontAwesomeIcon className='github' icon={faGithubSquare} />
-          </a>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://ilaydasilart.tumblr.com'
-          >
-            <FontAwesomeIcon className='tumblr' icon={faTumblrSquare} />
-          </a>
-        </p>
-      </Footer>
+        <Footer>
+          <p className='details'>
+            Code and Drawings by <span>IlaydaSila</span>
+          </p>
+          <p className='links'>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://github.com/ilaydasila'
+            >
+              <FontAwesomeIcon className='github' icon={faGithubSquare} />
+            </a>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://ilaydasilart.tumblr.com'
+            >
+              <FontAwesomeIcon className='tumblr' icon={faTumblrSquare} />
+            </a>
+          </p>
+        </Footer>
+      </div>
     </>
   );
 }
