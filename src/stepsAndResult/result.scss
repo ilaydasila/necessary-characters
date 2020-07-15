@@ -1,4 +1,5 @@
 .name {
+  margin-bottom: 50px;
   color: #ec6f66;
   font-size: 3rem;
   font-weight: 800;
@@ -7,5 +8,18 @@
   cursor: default;
   &:hover {
     color: #efff91;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 576px) {
+  .name {
+    font-size: 1rem;
   }
 }

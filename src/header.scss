@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   cursor: default;
+  p {
+    margin-top: 20px;
+  }
 }
 
 .left-half {
@@ -31,4 +34,24 @@
   color: $white;
   font-size: 3rem;
   font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .black-p {
+    font-size: 2rem;
+  }
+
+  .white-p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .black-p {
+    font-size: 1.2rem;
+  }
+
+  .white-p {
+    font-size: 1.2rem;
+  }
 }

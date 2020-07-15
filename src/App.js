@@ -46,8 +46,10 @@ function App() {
       </Main>
 
       <Footer>
-        <p>Code and Drawings by IlaydaSila</p>
-        <p>
+        <p className='details'>
+          Code and Drawings by <span>IlaydaSila</span>
+        </p>
+        <p className='links'>
           <a
             target='_blank'
             rel='noopener noreferrer'
