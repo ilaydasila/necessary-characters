@@ -8,7 +8,7 @@ export default function CharImg({ characterInfo }) {
   const imageCloth = getImageOfCharacter(characterInfo).imageCloth;
   const imageWeapon = getImageOfCharacter(characterInfo).imageWeapon;
   return (
-    <div className='character-image-container'>
+    <div id='right' className='character-image-container'>
       <img className='bottomimg' src='/assets/png/char.png' alt='character' />
       <img className='toping' src={imageCloth} alt='character cloth' />
       <img className='toping' src={imageHair} alt='character hair' />

@@ -1,0 +1,17 @@
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#right {
+  flex: 1;
+  height: 60vh;
+}

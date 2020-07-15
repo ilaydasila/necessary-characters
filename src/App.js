@@ -33,16 +33,20 @@ function App() {
         </div>
       </Header>
       <Main>
-        <Router>
-          <Route exact path='/' component={Step1} />
-          <Route exact path='/step2' component={Step2} />
-          <Route exact path='/result' component={Result} />
-        </Router>
-        <CharacterImage characterInfo={characterState} />
+        <div id='wrapper'>
+          <div id='left'>
+            <Router>
+              <Route exact path='/' component={Step1} />
+              <Route exact path='/step2' component={Step2} />
+              <Route exact path='/result' component={Result} />
+            </Router>
+          </div>
+          <CharacterImage characterInfo={characterState} />
+        </div>
       </Main>
 
       <Footer>
-        <p>Copyright &copy; 2020, IlaydasSila All Rights Reserved</p>
+        <p>Code and Drawings by IlaydaSila</p>
         <p>
           <a
             target='_blank'
