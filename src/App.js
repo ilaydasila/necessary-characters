@@ -25,11 +25,11 @@ function App() {
     <>
       <div className='content'>
         <Header>
-          <div class='left-half'>
+          <div className='left-half'>
             <p className='white-p'>MIX</p>
             <p className='white-p'>CREATE</p>
           </div>
-          <div class='right-half'>
+          <div className='right-half'>
             <p className='black-p'>ENJOY</p>
           </div>
         </Header>
