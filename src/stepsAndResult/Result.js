@@ -8,7 +8,7 @@ export const Result = () => {
 
   return (
     <>
-      <p className='name'>{state}</p>
+      <p>{state}</p>
       <Link to='/'>
         <button>Start Again</button>
       </Link>

@@ -1,39 +1,33 @@
 @import "./global.scss";
 
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: #111;
+.container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.right {
-  right: 0;
+.left-half {
+  background-color: $black;
+  flex: 1;
+  padding: 1rem;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.right-half {
+  background-color: $white;
+  flex: 1;
+  padding: 1rem;
 }
 
-.left-centered {
-  position: absolute;
-  margin-top: -212px;
-  margin-left: 130px;
+.black-p {
+  font-family: $underlined;
+  color: $black;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
-.centered img {
-  width: 800px;
+.white-p {
+  font-family: $underlined;
+  color: $white;
+  font-size: 3rem;
+  font-weight: 800;
 }
