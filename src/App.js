@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,9 +11,11 @@ import {
 
 import CharacterImage from "./CharacterImage";
 import Footer from "./Footer";
+import Main from "./Main";
 import { Step1 } from "./stepsAndResult/Step1";
 import { Step2 } from "./stepsAndResult/Step2";
 import { Result } from "./stepsAndResult/Result";
+import Header from "./Header";
 
 function App() {
   const characterState = `${useSelector((state) => state.hair)} ${useSelector(
@@ -21,7 +23,7 @@ function App() {
   )} ${useSelector((state) => state.weapon)}`;
   return (
     <>
-      <header className='container'>
+      <Header>
         <div class='left-half'>
           <p className='white-p'>MIX</p>
           <p className='white-p'>CREATE</p>
@@ -29,23 +31,31 @@ function App() {
         <div class='right-half'>
           <p className='black-p'>ENJOY</p>
         </div>
-      </header>
-      <main>
+      </Header>
+      <Main>
         <Router>
           <Route exact path='/' component={Step1} />
           <Route exact path='/step2' component={Step2} />
           <Route exact path='/result' component={Result} />
         </Router>
         <CharacterImage characterInfo={characterState} />
-      </main>
+      </Main>
+
       <Footer>
         <p>Copyright &copy; 2020, IlaydasSila All Rights Reserved</p>
         <p>
-          <a target='_blank' href='https://github.com/ilaydasila'>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/ilaydasila'
+          >
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>
-          <a target='_blank' href='https://ilaydasilart.tumblr.com'>
-            {" "}
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://ilaydasilart.tumblr.com'
+          >
             <FontAwesomeIcon icon={faTumblrSquare} />
           </a>
         </p>
