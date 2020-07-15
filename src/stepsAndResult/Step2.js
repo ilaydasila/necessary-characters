@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { chooseName } from "../rootSlice";
+import Form from "../Form";
 
 export const Step2 = () => {
   const dispatch = useDispatch();
@@ -17,14 +18,15 @@ export const Step2 = () => {
     history.push("/result");
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <Form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label htmlFor='name'>
           Name<br></br>
         </label>
         <input id='name' name='name' ref={register} type='text'></input>
+        <br />
         <button>Finish</button>
       </div>
-    </form>
+    </Form>
   );
 };

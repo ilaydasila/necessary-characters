@@ -1,0 +1,11 @@
+.name {
+  color: #ec6f66;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: default;
+  &:hover {
+    color: #efff91;
+  }
+}

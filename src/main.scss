@@ -1,6 +1,9 @@
+@import "./global.scss";
+
 #wrapper {
   display: flex;
   flex-direction: row;
+  height: 65vh;
 }
 
 #left {
@@ -9,9 +12,9 @@
   flex: 1;
   align-items: center;
   justify-content: center;
+  background-color: $black;
 }
 
 #right {
   flex: 1;
-  height: 60vh;
 }
