@@ -53,14 +53,14 @@ function App() {
             rel='noopener noreferrer'
             href='https://github.com/ilaydasila'
           >
-            <FontAwesomeIcon icon={faGithubSquare} />
+            <FontAwesomeIcon className='github' icon={faGithubSquare} />
           </a>
           <a
             target='_blank'
             rel='noopener noreferrer'
             href='https://ilaydasilart.tumblr.com'
           >
-            <FontAwesomeIcon icon={faTumblrSquare} />
+            <FontAwesomeIcon className='tumblr' icon={faTumblrSquare} />
           </a>
         </p>
       </Footer>

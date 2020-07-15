@@ -7,4 +7,27 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  p {
+    font-size: 0.9rem;
+  }
+
+  .github {
+    color: #ad5c51;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .tumblr {
+    color: #34465d;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+    }
+  }
+  a {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
 }
